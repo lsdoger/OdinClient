@@ -34,6 +34,7 @@
 
 package foo.starred.odinclient.features.impl.dungeons
 
+//~ if >= 26.2 'Setting.Companion' -> 'RenderableSetting.Companion'
 import com.odtheking.odin.clickgui.settings.Setting.Companion.withDependency
 import com.odtheking.odin.clickgui.settings.impl.BooleanSetting
 import com.odtheking.odin.clickgui.settings.impl.NumberSetting

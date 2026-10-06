@@ -4,6 +4,7 @@ on:
 
 jobs:
   notify:
+    if: github.repository == 'skies-starred/OdinClient'
     runs-on: ubuntu-latest
     steps:
       - name: Notify

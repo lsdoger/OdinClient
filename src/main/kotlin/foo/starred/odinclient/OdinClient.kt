@@ -43,7 +43,7 @@ object OdinClient : ClientModInitializer {
     var stream: Boolean = false
 
     override fun onInitializeClient() {
-        GitHubUpdateSource("skies-starred/OdinClient", "odin-client").init(version)
+        GitHubUpdateSource("lsdoger/OdinClient", "odin-client").init(version)
 
         ModuleManager.registerModules(config, *array)
 

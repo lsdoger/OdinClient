@@ -4,9 +4,10 @@ compatibility = "26.1.x"
 fabric-api = "0.155.2+26.1.2"
 
 odin = "7FcnBdo7"
-snowbird = "024+26.1"
-cascade = "041+26.1"
-updater = "1.0.9+26.1"
+odin-compat = "*"
+snowbird = "2026.09.4+26.1"
+cascade = "2026.10.1+26.1"
+updater = "2026.09.2+26.1"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }

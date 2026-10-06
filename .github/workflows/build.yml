@@ -37,6 +37,7 @@ jobs:
           path: build/libs/
 
       - name: Zip and upload to builds.aerii.xyz
+        if: github.repository == 'skies-starred/OdinClient'
         env:
           UPLOAD_KEY: ${{ secrets.UPLOAD_KEY }}
         run: |
@@ -48,6 +49,7 @@ jobs:
             -F "branch=${{ github.ref_name }}"
 
       - name: Notify Discord
+        if: github.repository == 'skies-starred/OdinClient'
         env:
           NOTIFY_TOKEN: ${{ secrets.NOTIFY_TOKEN }}
         run: |
